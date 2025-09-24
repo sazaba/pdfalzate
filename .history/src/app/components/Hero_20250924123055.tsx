@@ -1,6 +1,5 @@
 import Image from "next/image";
 import cook from '../images/cook.webp'
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">

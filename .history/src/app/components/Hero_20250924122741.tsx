@@ -1,5 +1,4 @@
 import Image from "next/image";
-import cook from '../images/cook.webp'
 
 export default function Hero() {
   return (
@@ -8,21 +7,19 @@ export default function Hero() {
         {/* Texto */}
         <div className="space-y-6">
           <p className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">
-            <span>Lanzamiento</span>
+            <span>Nuevo</span>
             <span className="h-1 w-1 rounded-full bg-gray-400"></span>
-            <span>Incluye 150+ recetas</span>
+            <span>Edición especial</span>
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
             COOKBOOK 3.0{" "}
-            <br/>
             <span className="text-gray-500">(By RC Servicios Generales)</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-600">
-            El eBook definitivo para cocinar en casa: recetas rápidas, saludables y
-            sorprendentes listas en 15–30 minutos. Incluye menús semanales, lista de
-            compras y variaciones para vegetarianos y carnívoros.
+            Subtítulo breve y poderoso para explicar el beneficio clave.
+            Reemplaza este texto por el del landing.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
@@ -30,7 +27,7 @@ export default function Hero() {
               href="#cta"
               className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-5 py-3 text-white font-semibold"
             >
-              Comprar ahora
+              Obtener acceso
             </a>
             <a
               href="#whatyouget"
@@ -44,23 +41,23 @@ export default function Hero() {
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 text-sm text-gray-700">
             <li className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-gray-900" />
-              Descarga inmediata (PDF/EPUB)
+              Acceso inmediato
             </li>
             <li className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-gray-900" />
-              Actualizaciones gratuitas
+              Actualizaciones
             </li>
             <li className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-gray-900" />
-              Garantía 7 días
+              Garantía
             </li>
           </ul>
         </div>
 
         {/* Imagen/video */}
         <div className="relative aspect-[4/3] w-full rounded-2xl bg-gray-100 shadow-sm">
-          {/* Deja el src vacío y reemplázalo por tu portada/mockup */}
-          <Image alt="Portada de COOKBOOK 3.0" src={cook} fill className="object-cover rounded-2xl" />
+          {/* Reemplaza por tu imagen/video */}
+          <Image alt="hero" src="" fill className="object-cover rounded-2xl" />
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import cook from '../images/cook.webp'
 
 export default function Hero() {
   return (
@@ -60,7 +59,7 @@ export default function Hero() {
         {/* Imagen/video */}
         <div className="relative aspect-[4/3] w-full rounded-2xl bg-gray-100 shadow-sm">
           {/* Deja el src vacío y reemplázalo por tu portada/mockup */}
-          <Image alt="Portada de COOKBOOK 3.0" src={cook} fill className="object-cover rounded-2xl" />
+          <Image alt="Portada de COOKBOOK 3.0" src="" fill className="object-cover rounded-2xl" />
         </div>
       </div>
     </section>
