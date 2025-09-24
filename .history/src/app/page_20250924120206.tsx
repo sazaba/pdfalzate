@@ -13,18 +13,20 @@ import Footer from "./components/Footer";
 
 
 export default function Page() {
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <TrustBar />
-      <WhatYouGet />
-      <Bonuses />
-      <Testimonials />
-      <Guarantee />
-      <FAQ />
-      <CTA />
-      <Footer />
-    </main>
-  );
+return (
+<main>
+<Navbar />
+<Hero />
+<TrustBar />
+<WhatYouGet />
+<Bonuses />
+<Testimonials />
+<Guarantee />
+<FAQ />
+<CTA />
+<Footer />
+</main>
+);
 }
+
+export default page

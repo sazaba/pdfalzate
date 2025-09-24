@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "RC Servicios Generales",
-  description: "Soluciones",
+  title: "Protagonist – Landing",
+  description: "Replica responsive con placeholders",
   };
   
   
