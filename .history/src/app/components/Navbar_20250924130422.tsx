@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from '../images/rclogo.png'
 
 const navItems = [
   { href: "#whatyouget", label: "Contenido" },
@@ -33,14 +32,14 @@ export default function Navbar() {
         <Link href="#" className="flex items-center gap-3">
           {/* Logo real */}
           <Image
-            src={logo}
+            src="/rclogo.png"
             alt="RC Logo"
             width={32}
             height={32}
             className="rounded"
           />
           <span className="font-semibold tracking-tight">
-          Servicios Generales
+            RC Servicios Generales
           </span>
         </Link>
 

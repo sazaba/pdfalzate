@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from '../images/rclogo.png'
 
 export default function Footer() {
   return (
@@ -8,7 +7,7 @@ export default function Footer() {
         {/* Columna 1: Marca */}
         <div>
           <Image
-            src={logo}
+            src="/rclogo.png"
             alt="RC Logo"
             width={32}
             height={32}

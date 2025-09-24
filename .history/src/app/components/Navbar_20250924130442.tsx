@@ -40,7 +40,7 @@ export default function Navbar() {
             className="rounded"
           />
           <span className="font-semibold tracking-tight">
-          Servicios Generales
+            RC Servicios Generales
           </span>
         </Link>
 
