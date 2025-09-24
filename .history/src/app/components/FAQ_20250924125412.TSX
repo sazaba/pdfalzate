@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 type FAQItem = { q: string; a: string };
 
@@ -48,7 +47,7 @@ export default function FAQ() {
                 >
                   <span className="font-medium">{item.q}</span>
                   <svg
-                    className={`h-5 w-5 transition-transform ${
+                    className={`h-5 w-5 transition ${
                       isOpen ? "rotate-180" : "rotate-0"
                     }`}
                     viewBox="0 0 24 24"
@@ -59,21 +58,9 @@ export default function FAQ() {
                     <path d="M6 9l6 6 6-6" />
                   </svg>
                 </button>
-
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      key="content"
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                      className="overflow-hidden"
-                    >
-                      <div className="px-5 pb-5 text-gray-600">{item.a}</div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {isOpen && (
+                  <div className="px-5 pb-5 text-gray-600">{item.a}</div>
+                )}
               </div>
             );
           })}
